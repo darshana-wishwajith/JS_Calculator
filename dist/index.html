@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col justify-center items-center h-[100vh]">
+    <div class="bg-black px-6 py-10 w-[450px]  rounded-3xl font-semibold">
+        <input type="text"  id="display" class="w-full focus:outline-none text-white font-semibold text-end text-[3.5rem] p-10 bg-black rounded-md" readonly value="0">
+
+        <div class="grid grid-cols-4 grid-rows-5 gap-y-5 px-3">
+            <button onclick="allClear()" class="bg-gray-300 text-black w-20 h-20 rounded-full text-[2rem] hover:bg-gray-200 active:bg-gray-100">AC</button>
+            <button onclick="clearOne()"  class="bg-gray-300 text-black w-20 h-20 rounded-full text-[2rem] hover:bg-gray-200 active:bg-gray-100">C</button>
+            <button onclick="addToDisplay('%')" class="bg-gray-300 text-black w-20 h-20 rounded-full text-[2rem] hover:bg-gray-200 active:bg-gray-100">%</button>
+            <button onclick="addToDisplay('/')" class="bg-[#FF9E0D] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#FF9E0D]/75 active:bg-[#FF9E0D]/65">/</button>
+            <button onclick="addToDisplay('7')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">7</button>
+            <button onclick="addToDisplay('8')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">8</button>
+            <button onclick="addToDisplay('9')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">9</button>
+            <button onclick="addToDisplay('*')" class="bg-[#FF9E0D] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#FF9E0D]/75 active:bg-[#FF9E0D]/65">*</button>
+            <button onclick="addToDisplay('4')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">4</button>
+            <button onclick="addToDisplay('5')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">5</button>
+            <button onclick="addToDisplay('6')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">6</button>
+            <button onclick="addToDisplay('-')" class="bg-[#FF9E0D] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#FF9E0D]/75 active:bg-[#FF9E0D]/65">-</button>
+            <button onclick="addToDisplay('1')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">1</button>
+            <button onclick="addToDisplay('2')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">2</button>
+            <button onclick="addToDisplay('3')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">3</button>
+            <button onclick="addToDisplay('+')" class="bg-[#FF9E0D] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#FF9E0D]/75 active:bg-[#FF9E0D]/65">+</button>
+            <button onclick="addToDisplay('0')" class="bg-[#333333] text-white w-[95%] h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65 col-span-2">0</button>
+            <button onclick="addToDisplay('.')" class="bg-[#333333] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#333333]/75 active:bg-[#333333]/65">.</button>
+            <button onclick="calculate()" class="bg-[#FF9E0D] text-white w-20 h-20 rounded-full text-[2rem] hover:bg-[#FF9E0D]/75 active:bg-[#FF9E0D]/65">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
